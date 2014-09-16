@@ -9,28 +9,6 @@
 * [License]
 
 ## Features
-## Installation
-#### Requirements
-* Before using the sources, make sure that you have installed:
-    * [Ruby]
-    * [Nanoc]
-    * [Bundler]
-* If not, launch these commands (_you might need root privileges to run this command_):
-```
-aptitude install ruby
-gem install nanoc
-gem install bundler
-```
-* If you're using _Windows_, _OS X_ or not a _Debian-based distribution_, check out the [Help and Docs] section for more information about installation.
-
-#### Compiling and Viewing
-* Download the repo: `git clone git://github.com/sljrobin/sljrobin.com.git`
-* Go to the working directory: `cd sljrobin.com/`
-* Install the required gems: `bundle install`
-* Compile the sources: `nanoc compile`
-* Start the web server: `nanoc view`
-* Open your web browser
-* Navigate to `http://localhost:3000`
 
 ## Content
 * [`api/`] Layout files
