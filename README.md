@@ -2,13 +2,8 @@
 [ReporTeX] is a template designed for writing LaTeX reports faster and to focus as much as possible on the content and not on the layout.
 
 ## Table of contents
-* [Features]
-* [Installation]
 * [Content]
-* [Links]
 * [License]
-
-## Features
 
 ## Content
 * [`api/`] Layout files
@@ -31,16 +26,11 @@
 * [`report.pdf`] Formatted version
 * [`report.tex`] TeX version
 
-## Links
-
 ## License
 The content of this project is licensed under the GPL license.
 
 
-[Features]: /README.md#features "Features"
-[Installation]: /README.md#installation "Installation"
 [Content]: /README.md#content "Content"
-[Links]: /README.md#links "Links"
 [License]: /README.md#license "License"
 
 [`api/`]: /api/ "api/"
@@ -60,8 +50,8 @@ The content of this project is licensed under the GPL license.
 [`materials/`]: /report/materials/ "materials/"
 [`codes/`]: /report/materials/codes/ "codes/"
 [`images/`]: /report/materials/images/ "images/"
-[`report.pdf`]: /report.pdf "report.pdf"
+[`report.pdf`]: https://github.com/sljrobin/ReporTeX/raw/master/report.pdf "report.pdf"
 [`report.tex`]: /report.tex "report.tex"
 
 
-[ReporTeX]: / "ReporTeX"
+[ReporTeX]: https://github.com/sljrobin/ReporTeX "ReporTeX"
