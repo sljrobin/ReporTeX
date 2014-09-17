@@ -3,6 +3,7 @@
 
 ## Table of contents
 * [Content]
+* [Usage]
 * [License]
 
 ## Content
@@ -26,11 +27,30 @@
 * [`report.pdf`] Formatted version
 * [`report.tex`] TeX version
 
+## Usage
+#### Requirements
+* A TeX distribution
+* An editor
+
+#### Creation of a new report
+* Download the repo: `git clone git://github.com/sljrobin/ReporTeX.git`
+* Edit the properties in [`report.tex`]
+    * Title: `{\reportTitle}{Title}`
+    * Subtitle: `{\reportSubtitle}{Subitle}`
+    * Author: `{\reportAuthor}{John Smith}`
+    * Company: `{\reportCompany}{Company}`
+    * Date: `{\reportDate}{dd/mm/yyyy}`
+* Change the company's logo in [`report/materials/images/`]
+* Write a new chapter
+    * Create a new file in [`report/chapters/`]
+    * Import it in [report.tex] with the `\input` command
+
 ## License
 The content of this project is licensed under the GPL license.
 
 
 [Content]: /README.md#content "Content"
+[Usage]: /README.md#usage "Usage"
 [License]: /README.md#license "License"
 
 [`api/`]: /api/ "api/"
@@ -52,6 +72,8 @@ The content of this project is licensed under the GPL license.
 [`images/`]: /report/materials/images/ "images/"
 [`report.pdf`]: https://github.com/sljrobin/ReporTeX/raw/master/report.pdf "report.pdf"
 [`report.tex`]: /report.tex "report.tex"
+[`report/chapters/`]: /report/chapters/ "report/chapters/"
+[`report/materials/images/`]: /report/materials/images/ "report/materials/images/"
 
 
 [ReporTeX]: https://github.com/sljrobin/ReporTeX "ReporTeX"
