@@ -4,6 +4,8 @@
 ## Table of contents
 * [Content]
 * [Usage]
+    * [Requirements]
+    * [Creation of a new report]
 * [License]
 
 ## Content
@@ -51,6 +53,8 @@ The content of this project is licensed under the GPL license.
 
 [Content]: /README.md#content "Content"
 [Usage]: /README.md#usage "Usage"
+[Requirements]: /README.md#requirements "Requirements"
+[Creation of a new report]: /README.md#creation-of-a-new-report "Creation of a new report"
 [License]: /README.md#license "License"
 
 [`api/`]: /api/ "api/"
