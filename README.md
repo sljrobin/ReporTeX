@@ -45,7 +45,7 @@
 * Change the company's logo in [`report/materials/images/`]
 * Write a new chapter
     * Create a new file in [`report/chapters/`]
-    * Import it in [report.tex] with the `\input` command
+    * Import it in [`report.tex`] with the `\input` command
 
 ## License
 The content of this project is licensed under the GPL license.
@@ -78,6 +78,5 @@ The content of this project is licensed under the GPL license.
 [`report.tex`]: /report.tex "report.tex"
 [`report/chapters/`]: /report/chapters/ "report/chapters/"
 [`report/materials/images/`]: /report/materials/images/ "report/materials/images/"
-
 
 [ReporTeX]: https://github.com/sljrobin/ReporTeX "ReporTeX"
