@@ -15,3 +15,17 @@
 \RequirePackage{graphicx}        % Images
 \RequirePackage{mathtools}       % Maths
 \RequirePackage{listings}        % Codes
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  COMMANDS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% code
+% '\code[a_line_of_code]'; print a line of code with the \texttt command
+\newcommand{\code}[1][]{\texttt{#1}}
+
+%% img
+% '\img[textwidth]{picture_name}'; print a picture
+\newcommand{\img}[2][]{\includegraphics[width=#1\textwidth]{\pathImages/#2}}
+
+%% sep
+% '\sep'; horizontal rule
+\newcommand{\sep}{\rule{\linewidth}{0.5mm}}
