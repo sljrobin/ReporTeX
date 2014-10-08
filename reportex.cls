@@ -29,3 +29,18 @@
 %% sep
 % '\sep'; horizontal rule
 \newcommand{\sep}{\rule{\linewidth}{0.5mm}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROPERTIES  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Report properties
+\newcommand{\reportTitle}{Title}  % Report title
+\newcommand{\reportSubtitle}{Subitle}  % Report subtitle
+\newcommand{\reportAuthor}{John Smith}  % Report author
+\newcommand{\reportCompany}{Company}  % Report company
+\newcommand{\reportDate}{dd/mm/yyyy}  % Report date
+
+%% PDF properties
+\newcommand{\pdfTitle}{\reportTitle}    % PDF title
+\newcommand{\pdfAuthor}{\reportAuthor}  % PDF author
+\newcommand{\pdfCreator}{}              % PDF creator
+\newcommand{\pdfKeywords}{}             % PDF keywords
