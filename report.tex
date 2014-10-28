@@ -1,52 +1,16 @@
-\documentclass[a4paper,12pt]{report}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROPERTIES  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Report properties
-  \newcommand{\reportTitle}{Title}  % Report title
-  \newcommand{\reportSubtitle}{Subitle}  % Report subtitle
-  \newcommand{\reportAuthor}{John Smith}  % Report author
-  \newcommand{\reportCompany}{Company}  % Report company
-  \newcommand{\reportDate}{dd/mm/yyyy}  % Report date
-
-%% PDF properties
-  \newcommand{\pdfTitle}{\reportTitle}    % PDF title
-  \newcommand{\pdfAuthor}{\reportAuthor}  % PDF author
-  \newcommand{\pdfCreator}{}              % PDF creator
-  \newcommand{\pdfKeywords}{}             % PDF keywords
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  API  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Paths
-  \newcommand{\pathApi}{./api}             % API
-  \newcommand{\pathPckg}{\pathApi/pckg}    % pckg
-  \newcommand{\pathStyle}{\pathApi/style}  % style
-  \newcommand{\pathEnv}{\pathApi/env}      % env
-%% Packages
-  \input{\pathApi/pckg/packages.tex}       % Packages 
-%% Style
-  \input{\pathApi/style/listings.tex}      % Listings
-  \input{\pathApi/style/style.tex}         % Style
-%% Environment
-  \input{\pathApi/env/paths.tex}           % Paths
-  \input{\pathApi/env/commands.tex}        % Commands
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  REPORT  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{reportex}
 \begin{document}
-  \input{\pathComponents/title.tex}     % Title
-  \input{\pathComponents/abstract.tex}  % Abstract
-  \tableofcontents                      % Table of contents
-  \listoffigures                        % Table of figures
-  \input{\pathChapters/01/01.tex}       % Chapter 1
-    \input{\pathChapters/01/01-01.tex}    % Section 1
 
+% Beginning 
+\input{\pathComponents/title.tex}     % Title
+\input{\pathComponents/abstract.tex}  % Abstract
+\tableofcontents                      % Table of contents
+\listoffigures                        % Table of figures
 
+% Chapters
+\input{\pathChapters/01/01.tex}       % Chapter 1
+  \input{\pathChapters/01/01-01.tex}    % Section 1
 
+\img[0.5]{glider.png}\\
 \href{http://www.google.com}{Google}
-\href{http://www.wikibooks.org}{Wikibooks home}
-
 \end{document}
