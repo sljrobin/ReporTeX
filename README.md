@@ -1,6 +1,6 @@
 # ReporTeX
 [ReporTeX] is a template designed for writing LaTeX reports faster and to focus as much as possible on the content and not on the layout.
-reepeporrt
+
 ## Table of contents
 * [Content]
 * [Usage]
@@ -9,15 +9,7 @@ reepeporrt
 * [License]
 
 ## Content
-* [`api/`] Layout files
-    * [`env/`] Variables
-        * [`commands.tex`] Personal commands
-        * [`paths.tex`] General paths
-    * [`pckg/`] Packages
-        * [`packages.tex`] Packages list
-    * [`style/`] Design
-        * [`listings.tex`] Code
-        * [`style.tex`] Miscellaneous settings
+* [`reportex.cls`] TeX class
 * [`report/`] Report files
     * [`chapters/`] Chapters
     * [`components/`] Other files
@@ -57,15 +49,7 @@ The content of this project is licensed under the GPL license.
 [Creation of a new report]: /README.md#creation-of-a-new-report "Creation of a new report"
 [License]: /README.md#license "License"
 
-[`api/`]: /api/ "api/"
-[`env/`]: /api/env/ "env/"
-[`commands.tex`]: /api/env/commands.tex "commands.tex"
-[`paths.tex`]: /api/env/paths.tex "paths.tex"
-[`pckg/`]: /api/pckg/ "pckg/"
-[`packages.tex`]: /api/pckg/packages.tex "packages.tex"
-[`style/`]: /api/style/ "style/"
-[`listings.tex`]: /api/style/listings.tex "listings.tex"
-[`style.tex`]: /api/style/style.tex "style.tex"
+[`reportex.cls`]: /reportex.cls "reportex.cls"
 [`report/`]: /report/ "report/"
 [`chapters/`]: /report/chapters/ "chapters/"
 [`components/`]: /report/components/ "components/"
