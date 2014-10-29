@@ -48,7 +48,7 @@
 \RequirePackage[utf8]{inputenc}  % Special characters
 \RequirePackage{graphicx}        % Images
 \RequirePackage{mathtools}       % Maths
-\RequirePackage{listings}        % Codes
+\RequirePackage{listings}        % Source codes
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PATHS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,20 +72,58 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  STYLE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Colors
+
 %% Listings
-\lstset{                  % Code style
-  language=C,
-  basicstyle=\footnotesize\ttfamily,
-  numbers=left,
-  numberstyle=\footnotesize,
-  numbersep=5pt,
-  backgroundcolor=\color{gray!05},
-  frame=single,
-  tabsize=2,
-  captionpos=b,      % TODO to check!
-  breaklines=true,
-  morecomment=[l]{//}{/*}
+% C
+\lstset{                                         % Code style
+  belowcaptionskip=1\baselineskip,               % Space after caption
+  backgroundcolor=\color{white},                 % Background color
+  basicstyle=\footnotesize\ttfamily,             % Font size
+  breaklines=true,                               % Automatic line breaking
+  captionpos=b,                                  % Caption-position to bottom
+  commentstyle=\itshape\color{purple!40!black},  % Comment style
+  extendedchars=true,                            % Use non-ASCII characters
+  frame=L,                                       % Frame around the code
+  identifierstyle=\color{red},                   % Identifiers
+  keepspaces=true,                               % Keeps spaces in text
+  keywordstyle=\bfseries\color{green!40!black},  % Keywords style
+  language=C,                                    % Language
+  literate=*{0}{{\textcolor{blue}{0}}}{1}%       % Coloring numbers
+            {1}{{\textcolor{blue}{1}}}{1}%
+            {2}{{\textcolor{blue}{2}}}{1}%
+            {3}{{\textcolor{blue}{3}}}{1}%
+            {4}{{\textcolor{blue}{4}}}{1}%
+            {5}{{\textcolor{blue}{5}}}{1}%
+            {6}{{\textcolor{blue}{6}}}{1}%
+            {7}{{\textcolor{blue}{7}}}{1}%
+            {8}{{\textcolor{blue}{8}}}{1}%
+            {9}{{\textcolor{blue}{9}}}{1}%
+            {.0}{{\textcolor{blue}{.0}}}{1}%
+            {.1}{{\textcolor{blue}{.1}}}{1}%
+            {.2}{{\textcolor{blue}{.2}}}{1}%
+            {.3}{{\textcolor{blue}{.3}}}{1}%
+            {.4}{{\textcolor{blue}{.4}}}{1}%
+            {.5}{{\textcolor{blue}{.5}}}{1}%
+            {.6}{{\textcolor{blue}{.6}}}{1}%
+            {.7}{{\textcolor{blue}{.7}}}{1}%
+            {.8}{{\textcolor{blue}{.8}}}{1}%
+            {.9}{{\textcolor{blue}{.9}}}{1}%
+            {\ }{{ }}{1},% Handle the space
+  morekeywords={},                               % Additional keywords
+  numbers=left,                                  % Line-numbers
+  numbersep=10pt,                                % Distance between line-numbers and the code
+  numberstyle=\scriptsize\color{gray},           % Line-numbers style
+  rulecolor=\color{black},                       % Rule color
+  showstringspaces=false,                        % Underline spaces within strings only
+  showtabs=false,                                % Show tab characters
+  stepnumber=1,                                  % Step between two line-numbers
+  stringstyle=\color{orange},                    % String literal style
+  xleftmargin=\parindent,                        % Left margin
+  xrightmargin=\parindent,                       % Right margin
+  tabsize=2,                                     % Default tabsize
+  title=\lstname                                 % Print name if caption field empty
 }
 
 %% Sections & Subsections
-\setcounter{tocdepth}{2}  % Print subsection in Table of contents
+\setcounter{tocdepth}{2}                         % Print subsection in Table of contents
