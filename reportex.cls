@@ -7,21 +7,6 @@
 \ProvidesClass{reportex}[2014/10/07 A class for easily creating LaTeX reports]
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROPERTIES  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Report properties
-\newcommand{\reportTitle}{Title}  % Report title
-\newcommand{\reportSubtitle}{Subitle}  % Report subtitle
-\newcommand{\reportAuthor}{John Smith}  % Report author
-\newcommand{\reportCompany}{Company}  % Report company
-\newcommand{\reportDate}{dd/mm/yyyy}  % Report date
-
-%% PDF properties
-\newcommand{\pdfTitle}{\reportTitle}    % PDF title
-\newcommand{\pdfAuthor}{\reportAuthor}  % PDF author
-\newcommand{\pdfCreator}{}              % PDF creator
-\newcommand{\pdfKeywords}{}             % PDF keywords
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PACKAGES  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% PDF Information
 \RequirePackage[% Add information and create hyperlinks within the document

@@ -1,5 +1,29 @@
+%% Report properties
+\newcommand{\reportTitle}     % Report title
+  {Title}  
+\newcommand{\reportSubtitle}  % Report subtitle
+  {Subitle}
+\newcommand{\reportAuthor}    % Report author
+  {John \textsc{Smith}}
+\newcommand{\reportCompany}   % Report company
+  {Company}
+\newcommand{\reportDate}[2][1]{#1/#2/#3}     % Report date
+  %{dd/mm/yyyy}
+
+%% PDF properties
+\newcommand{\pdfTitle}{\reportTitle}    % PDF title
+\newcommand{\pdfAuthor}{John Smith}  % PDF author
+\newcommand{\pdfCreator}{}              % PDF creator
+\newcommand{\pdfKeywords}{}             % PDF keywords
+
+
+
+
+
 \documentclass{reportex}
 \begin{document}
+
+\reportDate[03]{10}{2014}
 
 % Beginning 
 \input{\pathComponents/title.tex}     % Title
