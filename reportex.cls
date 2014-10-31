@@ -17,7 +17,7 @@
   pdfkeywords={\pdfKeywords},  % Keywords
   % Links
   colorlinks=true,             % Colored links
-  linkcolor=red,               % Internal links
+  linkcolor=rptxBlue,          % Internal links
   urlcolor=cyan,               % Web links
   citecolor=green,             % Bibliography links
   filecolor=magenta,           % File links
@@ -62,6 +62,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  STYLE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Colors
+\definecolor{rptxBlue}{HTML}{08087B}
 
 %% Listings
 % C
@@ -114,5 +115,3 @@
   title=\lstname                                 % Print name if caption field empty
 }
 
-%% Sections & Subsections
-\setcounter{tocdepth}{2}                         % Print subsection in Table of contents
