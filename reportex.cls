@@ -8,7 +8,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PACKAGES  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% PDF Information
+%%% PDF Information
 \RequirePackage[% Add information and create hyperlinks within the document
   % PDF properties
   pdftitle={\pdfTitle},        % Title
@@ -23,18 +23,30 @@
   filecolor=magenta,           % File links
 ]{hyperref}
 
-%% Colors
+%%% Colors
 \RequirePackage[% Add colors
   svgnames,     % 150 colors
   table         % Add colors to tables
 ]{xcolor}
 
-%% Miscellaneous
-\RequirePackage[utf8]{inputenc}  % Special characters
-\RequirePackage{graphicx}        % Images
-\RequirePackage{mathtools}       % Maths
-\RequirePackage{listings}        % Source codes
-\RequirePackage[                 % Text general appearance
+%%% Formatting
+\RequirePackage[T1]{fontenc}         % T1 encoding
+\RequirePackage{charter}             % Main font
+\RequirePackage[expert]{mathdesign}  % Computer Modern font for maths
+\RequirePackage{upgreek}             % Greek characters
+\RequirePackage{titlesec}            % Style of headers
+\RequirePackage{sectsty}             % Style of headers
+\RequirePackage[                     % Style of Table of Contents
+  subfigure  % Avoid conflict with '\setcounter'
+]{tocloft}
+\RequirePackage{subfigure}           % Figures and Tables inclusions
+
+%%% Miscellaneous
+\RequirePackage[utf8]{inputenc}      % Special characters
+\RequirePackage{graphicx}            % Images
+\RequirePackage{mathtools}           % Maths
+\RequirePackage{listings}            % Source codes
+\RequirePackage[                     % Text general appearance
   shrink=10,  % Reduce shrinkability
   stretch=10  % Reduce stretchability
 ]{microtype}
@@ -50,22 +62,22 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  COMMANDS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% code -- '\code[a_line_of_code]'; print a line of code with the \texttt command
+%%% code -- '\code[a_line_of_code]'; print a line of code with the \texttt command
 \newcommand{\code}[1][]{\texttt{#1}}
 
-%% img -- '\img[textwidth]{picture_name}'; print a picture
+%%% img -- '\img[textwidth]{picture_name}'; print a picture
 \newcommand{\img}[2][]{\includegraphics[width=#1\textwidth]{\pathImages/#2}}
 
-%% sep -- '\sep'; horizontal rule
+%%% sep -- '\sep'; horizontal rule
 \newcommand{\sep}{\rule{\linewidth}{0.5mm}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  STYLE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Colors
+%%% Colors
 \definecolor{rptxBlue}{HTML}{08087B}
 
-%% Listings
-% C
+%%% Listings
+%% C
 \lstset{                                         % Code style
   belowcaptionskip=1\baselineskip,               % Space after caption
   backgroundcolor=\color{white},                 % Background color
@@ -115,3 +127,72 @@
   title=\lstname                                 % Print name if caption field empty
 }
 
+%%% Headers
+%% Title style
+\chapterfont{
+  \usefont{T1}  % Type1 encoding
+          {qhv} % qhv font family
+          {b}   % Bold
+          {n}   % Shape
+          \selectfont\huge
+}
+
+%% Sections style
+\titleformat{\section}[hang]{
+  \usefont{T1}  % Type1 encoding
+          {qhv} % qhv font family
+          {b}   % Bold
+          {n}   % Shape
+          \selectfont
+}
+{}              % Label
+{0em}           % Space between label and title body
+{\hspace{-0.4pt}\Large \thesection\hspace{0.6em}}  % Code preceding the title
+
+%% Table of Contents
+% ToC title
+\renewcommand{\cfttoctitlefont}{
+  \usefont{T1}  % Type1 encoding
+          {qhv} % qhv font family
+          {b}   % Bold
+          {n}   % Shape
+          \selectfont\huge
+}
+% ToC Chapter titles
+\renewcommand{\cftchapfont}{
+  \usefont{T1}  % Type1 encoding
+          {qhv} % qhv font family
+          {b}   % Bold
+          {n}   % Shape
+          \selectfont}          
+% ToC Section titles
+\renewcommand{\cftsecfont}{
+  \usefont{T1}  % Type1 encoding
+          {bch} % bch font family
+          {m}   % Medium
+          {n}   % Shape
+          \selectfont
+}
+% Toc Subsection titles
+\renewcommand{\cftsubsecfont}{
+  \usefont{T1}  % Type1 encoding
+          {bch} % bch font family
+          {m}   % Medium
+          {n}   % Shape
+          \selectfont
+}
+% Chapter page numbers
+\renewcommand{\cftchappagefont}{
+  \usefont{T1}  % Type1 encoding
+          {bch} % bch font family
+          {b}   % Bold
+          {n}   % Shape
+          \selectfont
+}
+% Section page numbers
+\renewcommand{\cftsecpagefont}{\cftsecfont}
+% Subsection page numbers
+\renewcommand{\cftsubsecpagefont}{\cftsubsecfont}
+             
+%% Sections & Subsections
+\setcounter{tocdepth}{2}  % Print subsection in Table of contents
