@@ -34,6 +34,10 @@
 \RequirePackage{graphicx}        % Images
 \RequirePackage{mathtools}       % Maths
 \RequirePackage{listings}        % Source codes
+\RequirePackage[                 % Text general appearance
+  shrink=10,  % Reduce shrinkability
+  stretch=10  % Reduce stretchability
+]{microtype}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PATHS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
