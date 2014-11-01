@@ -39,6 +39,18 @@
 \RequirePackage[                     % Style of Table of Contents
   subfigure  % Avoid conflict with '\setcounter'
 ]{tocloft}
+\RequirePackage[                     % Text general appearance
+  activate={     % Protrusion and Expansion
+    true,
+    nocompatibility},
+  kerning=true,  % Kerning
+  factor=1100,   % Add 10% to the protrusion amount
+  final,         % Enable microtype
+  spacing=true,  % Spacing
+  shrink=10,     % Reduce shrinkability
+  stretch=10,    % Reduce stretchability
+  tracking=true  % Tracking
+]{microtype}
 \RequirePackage{subfigure}           % Figures and Tables inclusions
 
 %%% Miscellaneous
@@ -46,10 +58,6 @@
 \RequirePackage{graphicx}            % Images
 \RequirePackage{mathtools}           % Maths
 \RequirePackage{listings}            % Source codes
-\RequirePackage[                     % Text general appearance
-  shrink=10,  % Reduce shrinkability
-  stretch=10  % Reduce stretchability
-]{microtype}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PATHS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -137,7 +145,7 @@
           \selectfont\huge
 }
 
-%% Sections style
+%% Section style
 \titleformat{\section}[hang]{
   \usefont{T1}  % Type1 encoding
           {qhv} % qhv font family
@@ -164,7 +172,8 @@
           {qhv} % qhv font family
           {b}   % Bold
           {n}   % Shape
-          \selectfont}          
+          \selectfont
+}          
 % ToC Section titles
 \renewcommand{\cftsecfont}{
   \usefont{T1}  % Type1 encoding
@@ -194,5 +203,72 @@
 % Subsection page numbers
 \renewcommand{\cftsubsecpagefont}{\cftsubsecfont}
              
-%% Sections & Subsections
+%% Section & Subsection
 \setcounter{tocdepth}{2}  % Print subsection in Table of contents
+
+%% List of Figures
+\renewcommand{\cftloftitlefont}{
+  \usefont{T1}  % Type1 encoding
+          {qhv} % qhv font family
+          {b}   % Bold
+          {n}   % Shape
+          \selectfont\huge
+}
+
+%%% Typography
+%% Protusion
+\SetProtrusion{
+  encoding={*},
+  family={bch},
+  series={*},
+  size={6,7}
+}
+{1={ ,750},
+ 2={ ,500},
+ 3={ ,500},
+ 4={ ,500},
+ 5={ ,500},
+ 6={ ,500},
+ 7={ ,600},
+ 8={ ,500},
+ 9={ ,500},
+ 0={ ,500}
+}
+
+%% Kerning
+% Titles
+\SetExtraKerning[unit=space]{
+  encoding={*},
+  family={qhv},
+  series={b},
+  size={
+    large,
+    Large}
+}
+{1={-200,-200}, 
+ \textendash={400,400}
+}
+
+% Miscellaneous
+\SetExtraKerning[unit=space]{
+  encoding={*},
+  family={bch},
+  series={*},
+  size={
+    footnotesize,
+    small,
+    normalsize
+  }
+}
+{\textendash={400,400},       % En-dash, add more space around it
+ "28={ ,150},                 % Left bracket, add space from right
+ "29={150, },                 % Right bracket, add space from left
+ \textquotedblleft={ ,150},   % Left quotation mark, space from right
+ \textquotedblright={150, }   % Right quotation mark, space from left
+}
+
+%% Tracking
+\SetTracking{                 % Space for small capitals%
+  encoding={*},
+  shape=sc
+}{40}

@@ -16,15 +16,23 @@
 \newcommand{\pdfCreator}{}  % PDF creator
 \newcommand{\pdfKeywords}{}  % PDF keywords
 
+\newcommand{\protusion}[1]{\microtypesetup{protrusion=false}#1\microtypesetup{protrusion=false}}  % PDF keywords
+
 
 
 \documentclass{reportex}
+
+\usepackage[DIV=14,BCOR=2mm,headinclude=true,footinclude=false]{typearea}
+
 \begin{document}
 
 % Beginning 
 \input{\pathComponents/title.tex}     % Title
 \input{\pathComponents/abstract.tex}  % Abstract
-\tableofcontents                      % Table of contents
+%\microtypesetup{protrusion=false} % disables protrusion locally in the document
+\protusion{\tableofcontents} % prints Table of Contents
+%\microtypesetup{protrusion=false} } % enables protrusion
+%\tableofcontents                      % Table of contents
 \listoffigures                        % Table of figures
 
 % Chapters
