@@ -234,6 +234,7 @@
  9={ ,500},
  0={ ,500}
 }
+\newcommand{\protusion}[1]{\microtypesetup{protrusion=false}#1\microtypesetup{protrusion=false}}
 
 %% Kerning
 % Titles
