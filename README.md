@@ -62,5 +62,4 @@ The content of this project is licensed under the GPL license.
 [`report.tex`]: /report.tex "report.tex"
 [`report/chapters/`]: /report/chapters/ "report/chapters/"
 [`report/materials/images/`]: /report/materials/images/ "report/materials/images/"
-
 [ReporTeX]: https://github.com/sljrobin/ReporTeX "ReporTeX"
