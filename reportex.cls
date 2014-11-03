@@ -269,7 +269,7 @@
 }
 
 %% Tracking
-\SetTracking{                 % Space for small capitals%
+\SetTracking{                 % Space for small capitals
   encoding={*},
   shape=sc
 }{40}
