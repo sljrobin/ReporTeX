@@ -2,6 +2,7 @@
 %% A class for easily creating LaTeX reports
 %% by Simon L. J. Robin
 %% sljrobin@gmail.com
+%% sljrobin.com
 \LoadClass[a4paper,12pt]{report}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{reportex}[2014/10/07 A class for easily creating LaTeX reports]
@@ -138,82 +139,31 @@
 %%% Headers
 %% Title style
 \chapterfont{
-  \usefont{T1}  % Type1 encoding
-          {qhv} % qhv font family
-          {b}   % Bold
-          {n}   % Shape
-          \selectfont\huge
+  \usefont{T1}{qhv}{b}{n}\selectfont\huge
 }
 
 %% Section style
 \titleformat{\section}[hang]{
-  \usefont{T1}  % Type1 encoding
-          {qhv} % qhv font family
-          {b}   % Bold
-          {n}   % Shape
-          \selectfont
+  \usefont{T1}{qhv}{b}{n}\selectfont
 }
 {}              % Label
 {0em}           % Space between label and title body
 {\hspace{-0.4pt}\Large \thesection\hspace{0.6em}}  % Code preceding the title
 
 %% Table of Contents
-% ToC title
-\renewcommand{\cfttoctitlefont}{
-  \usefont{T1}  % Type1 encoding
-          {qhv} % qhv font family
-          {b}   % Bold
-          {n}   % Shape
-          \selectfont\huge
-}
-% ToC Chapter titles
-\renewcommand{\cftchapfont}{
-  \usefont{T1}  % Type1 encoding
-          {qhv} % qhv font family
-          {b}   % Bold
-          {n}   % Shape
-          \selectfont
-}          
-% ToC Section titles
-\renewcommand{\cftsecfont}{
-  \usefont{T1}  % Type1 encoding
-          {bch} % bch font family
-          {m}   % Medium
-          {n}   % Shape
-          \selectfont
-}
-% Toc Subsection titles
-\renewcommand{\cftsubsecfont}{
-  \usefont{T1}  % Type1 encoding
-          {bch} % bch font family
-          {m}   % Medium
-          {n}   % Shape
-          \selectfont
-}
-% Chapter page numbers
-\renewcommand{\cftchappagefont}{
-  \usefont{T1}  % Type1 encoding
-          {bch} % bch font family
-          {b}   % Bold
-          {n}   % Shape
-          \selectfont
-}
-% Section page numbers
-\renewcommand{\cftsecpagefont}{\cftsecfont}
-% Subsection page numbers
-\renewcommand{\cftsubsecpagefont}{\cftsubsecfont}
+\renewcommand{\cfttoctitlefont}{\usefont{T1}{qhv}{b}{n}\selectfont\huge} % ToC title
+\renewcommand{\cftchapfont}{\usefont{T1}{qhv}{b}{n}\selectfont}          % ToC Chapter titles
+\renewcommand{\cftsecfont}{\usefont{T1}{bch}{m}{n}\selectfont}           % ToC Section titles
+\renewcommand{\cftsubsecfont}{\usefont{T1}{bch}{m}{n}\selectfont}        % Toc Subsection titles
+\renewcommand{\cftchappagefont}{\usefont{T1}{bch}{b}{n}\selectfont}      % Chapter page numbers
+\renewcommand{\cftsecpagefont}{\cftsecfont}                              % Section page numbers
+\renewcommand{\cftsubsecpagefont}{\cftsubsecfont}                        % Subsection page numbers
              
 %% Section & Subsection
 \setcounter{tocdepth}{2}  % Print subsection in Table of contents
 
 %% List of Figures
-\renewcommand{\cftloftitlefont}{
-  \usefont{T1}  % Type1 encoding
-          {qhv} % qhv font family
-          {b}   % Bold
-          {n}   % Shape
-          \selectfont\huge
-}
+\renewcommand{\cftloftitlefont}{\usefont{T1}{qhv}{b}{n}\selectfont\huge}
 
 %%% Typography
 %% Protusion
