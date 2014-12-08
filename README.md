@@ -25,6 +25,7 @@
 #### Requirements
 * A TeX distribution
 * An editor
+* Python
 
 #### Creation of a new report
 * Download the repo: `git clone git://github.com/sljrobin/ReporTeX.git`
