@@ -19,9 +19,9 @@
   % Links
   colorlinks=true,             % Colored links
   linkcolor=rptxBlue,          % Internal links
-  urlcolor=cyan,               % Web links
-  citecolor=green,             % Bibliography links
-  filecolor=magenta,           % File links
+  urlcolor=rptxGreen,          % Web links
+  citecolor=rptxBlue,          % Bibliography links
+  filecolor=rptxBlue,          % File links
 ]{hyperref}
 
 %%% Colors
@@ -35,8 +35,10 @@
 \RequirePackage{charter}             % Main font
 \RequirePackage[expert]{mathdesign}  % Computer Modern font for maths
 \RequirePackage{upgreek}             % Greek characters
+\RequirePackage{fancyhdr}            % Style of page headers/footers
 \RequirePackage{titlesec}            % Style of headers
 \RequirePackage{sectsty}             % Style of headers
+\RequirePackage{abstract}            % Style of abstract
 \RequirePackage[                     % Style of Table of Contents
   subfigure  % Avoid conflict with '\setcounter'
 ]{tocloft}
@@ -59,6 +61,7 @@
 \RequirePackage{graphicx}            % Images
 \RequirePackage{mathtools}           % Maths
 \RequirePackage{listings}            % Source codes
+\RequirePackage{lipsum}              % Lorem Ip­sum dummy text
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PATHS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,6 +87,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  STYLE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Colors
 \definecolor{rptxBlue}{HTML}{08087B}
+\definecolor{rptxGreen}{HTML}{047A09}
 
 %%% Listings
 %% C
@@ -137,18 +141,28 @@
 }
 
 %%% Headers
+%% Document style
+\pagestyle{fancy} % Change the style to "fancy"
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\fancyhf{}
+\lhead{\chaptername\hspace{3pt}\thechapter.\hspace{3pt}\leftmark}
+\rhead{\thepage}
+\fancyfoot{}
+
 %% Title style
-\chapterfont{
-  \usefont{T1}{qhv}{b}{n}\selectfont\huge
-}
+\titleformat{\chapter}[display]
+  {\usefont{T1}{qhv}{b}{n}\selectfont\huge}
+  {\chaptertitlename\ \thechapter}
+  {20pt}{\Huge}
+  [\vspace{1ex}{\titlerule[2pt]}]
 
 %% Section style
-\titleformat{\section}[hang]{
-  \usefont{T1}{qhv}{b}{n}\selectfont
-}
-{}              % Label
-{0em}           % Space between label and title body
-{\hspace{-0.4pt}\Large \thesection\hspace{0.6em}}  % Code preceding the title
+\titleformat{\section}[hang]
+  {\usefont{T1}{qhv}{b}{n}\selectfont}
+  {}{0em}                                            % Label | Space between label and title body
+  {\hspace{-0.4pt}\Large \thesection\hspace{0.6em}}  % Code preceding the title
+
+\renewcommand{\abstractnamefont}{\usefont{T1}{qhv}{b}{n}\selectfont\huge}
 
 %% Table of Contents
 \renewcommand{\cfttoctitlefont}{\usefont{T1}{qhv}{b}{n}\selectfont\huge} % ToC title
