@@ -67,9 +67,11 @@ class Component:
 class Report:
     "Creation of a report"
     
-    def __init__(self, author):
+    def __init__(self):
         self.name = "report.tex"
-        self.author = author
+        self.author = ""
+        self.title = ""
+        self.subtitle = ""
 
     def create_dependencies(self):
         if os.path.exists(self.name):
@@ -109,20 +111,34 @@ class Report:
         return rptx_property
         
 
+    def check_class(self):
+        if not os.path.exists("reportex.cls"):
+            print("Warning! 'reportex.cls' is not in the current directory")
+
+
+    def check_creation(self):
+        print "\nChecking..."
+        print "Title: " + self.title
+        print "Subtitle: " + self.subtitle
+        print
+
+
     def create_report(self):
-        title = self.write_title()
-        subtitle = self.write_subtitle()
+        self.title = self.write_title()
+        self.subtitle = self.write_subtitle()
         author = self.write_author()
 
-        print "the title is " + title
-        rptx_title = self.complete_rptx_property(STR_PREFIX_COMMAND, "{\\reportTitle}", title)
-        rptx_subtitle = self.complete_rptx_property(STR_PREFIX_COMMAND, "{\\reportSubtitle}", subtitle)
+
+        rptx_title = self.complete_rptx_property(STR_PREFIX_COMMAND, "{\\reportTitle}", self.title)
+        rptx_subtitle = self.complete_rptx_property(STR_PREFIX_COMMAND, "{\\reportSubtitle}", self.subtitle)
         rptx_author = self.complete_rptx_property(STR_PREFIX_COMMAND, "{\\reportAuthor}", author)
 
         component = open(self.name, "w")
         component.write(rptx_title)
         component.write(rptx_subtitle)
         component.write(rptx_author)
+        self.check_creation()
+        self.check_class()
         component.close()
     
 
@@ -132,7 +148,7 @@ class Report:
 def create():
     print("Creation of a new report")
     
-    report = Report("Simon")
+    report = Report()
     report.create_report()
 
 #    abstract = Component(STR_NAME_ABSTRACT, STR_HEADER_ABSTRACT, STR_FOOTER_ABSTRACT)
