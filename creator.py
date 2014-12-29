@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2014-12-27 14:38:10
+# Modified       :2014-12-29 10:40:11
 ##########################################################################################
 
 
@@ -20,7 +20,6 @@ import os
 STR_NAME_ABSTRACT = "abstract.tex"
 STR_HEADER_ABSTRACT = "\\begin{abstract}\n"
 STR_FOOTER_ABSTRACT = "\\end{abstract}"
-
 
 STR_PREFIX_COMMAND = "\\newcommand"
 
@@ -38,12 +37,8 @@ class Component:
         self.header = header
         self.footer = footer
     
-
-
     def get_name(self):
         return self.name
-
-
 
     def create(self):
         if os.path.exists(self.name):
