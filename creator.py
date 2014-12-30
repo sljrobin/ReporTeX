@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2014-12-29 10:40:11
+# Modified       :2014-12-30 15:09:39
 ##########################################################################################
 
 
@@ -49,8 +49,6 @@ class Component:
             component.write(self.footer)
             component.write(POT_POURRI)
             component.close()
-
-
 
 
 
