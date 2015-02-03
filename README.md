@@ -1,5 +1,5 @@
 # ReporTeX
-[ReporTeX] is a template designed for writing LaTeX reports faster and to focus as much as possible on the content and not on the layout.
+[ReporTeX] is a template designed for writing LaTeX reports faster and to focus as much as possible on the content and not on the layout. Feel free to check out the [ReporTeX webpage].
 
 ## Table of contents
 * [Content]
@@ -65,3 +65,4 @@ The content of this project is licensed under the GPL license.
 [`report/materials/images/`]: /report/materials/images/ "report/materials/images/"
 
 [ReporTeX]: https://github.com/sljrobin/ReporTeX "ReporTeX"
+[ReporTeX webpage]: http://work.sljrobin.com/reportex "ReporTeX webpage"
