@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2014-12-30 15:09:39
+# Modified       :2015-02-28 23:20:45
 ##########################################################################################
 
 
@@ -93,23 +93,19 @@ class Report:
         author = firstname + "\\textsc{" + lastname + "}"
         return author
 
-
     def complete_rptx_property(self, prefix, command, name):
         rptx_property = prefix + command + "{" + name + "}\n"
         return rptx_property
-        
 
     def check_class(self):
         if not os.path.exists("reportex.cls"):
             print("Warning! 'reportex.cls' is not in the current directory")
-
 
     def check_creation(self):
         print "\nChecking..."
         print "Title: " + self.title
         print "Subtitle: " + self.subtitle
         print
-
 
     def create_report(self):
         self.title = self.write_title()
