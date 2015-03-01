@@ -5,17 +5,15 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-02-28 23:20:45
+# Modified       :2015-03-01 21:33:25
 ##########################################################################################
 
 
 #“A goal without a plan is just a wish.”
 # ― Antoine de Saint-Exupéry
 #
-
 import argparse
 import os
-
 
 STR_NAME_ABSTRACT = "abstract.tex"
 STR_HEADER_ABSTRACT = "\\begin{abstract}\n"
