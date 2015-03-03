@@ -5,9 +5,8 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-01 21:33:25
+# Modified       :2015-03-03 20:15:38
 ##########################################################################################
-
 
 #“A goal without a plan is just a wish.”
 # ― Antoine de Saint-Exupéry
@@ -35,9 +34,6 @@ class Component:
         self.header = header
         self.footer = footer
     
-    def get_name(self):
-        return self.name
-
     def create(self):
         if os.path.exists(self.name):
             print(self.name + " already exists!")
