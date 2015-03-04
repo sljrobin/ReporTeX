@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-03 20:15:38
+# Modified       :2015-03-04 21:24:57
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -43,8 +43,6 @@ class Component:
             component.write(self.footer)
             component.write(POT_POURRI)
             component.close()
-
-
 
 class Report:
     "Creation of a report"
