@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-04 21:24:57
+# Modified       :2015-03-05 22:21:07
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -117,7 +117,6 @@ class Report:
         self.check_class()
         component.close()
     
-
 ##########################################################################################
 
 
@@ -126,16 +125,6 @@ def create():
     
     report = Report()
     report.create_report()
-
-#    abstract = Component(STR_NAME_ABSTRACT, STR_HEADER_ABSTRACT, STR_FOOTER_ABSTRACT)
-#    abstract.create()
-#    abstract.replace_field(POT_POURRI, "")
-
-
-
-
-
-
 
 ##########################################################################################
 parser = argparse.ArgumentParser()
