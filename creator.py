@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-08 21:01:02
+# Modified       :2015-03-10 20:19:50
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -118,8 +118,6 @@ class Report:
         component.close()
     
 ##########################################################################################
-
-
 def create():
     print("Creation of a new report")
     
