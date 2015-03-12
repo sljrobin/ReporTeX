@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-10 20:19:50
+# Modified       :2015-03-12 22:32:47
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -109,14 +109,6 @@ class Report:
         rptx_subtitle = self.complete_rptx_property(STR_PREFIX_COMMAND, "{\\reportSubtitle}", self.subtitle)
         rptx_author = self.complete_rptx_property(STR_PREFIX_COMMAND, "{\\reportAuthor}", author)
 
-        component = open(self.name, "w")
-        component.write(rptx_title)
-        component.write(rptx_subtitle)
-        component.write(rptx_author)
-        self.check_creation()
-        self.check_class()
-        component.close()
-    
 ##########################################################################################
 def create():
     print("Creation of a new report")
