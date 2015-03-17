@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-15 16:33:39
+# Modified       :2015-03-17 20:50:14
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -22,8 +22,6 @@ VLE_TITLE = "35"
 
 #class Cleaner:
 ##########################################################################################
-
-
 class Component:
     "Abstract, chapter, etc."
 
