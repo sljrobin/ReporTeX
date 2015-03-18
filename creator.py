@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-17 20:50:14
+# Modified       :2015-03-18 17:46:41
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -30,16 +30,6 @@ class Component:
         self.header = header
         self.footer = footer
     
-    def create(self):
-        if os.path.exists(self.name):
-            print(self.name + " already exists!")
-        else:
-            component = open(self.name, "w")
-            component.write(self.header)
-            component.write(self.footer)
-            component.write(POT_POURRI)
-            component.close()
-
 class Report:
     "Creation of a report"
     
