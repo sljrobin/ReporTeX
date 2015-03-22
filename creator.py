@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-18 17:46:41
+# Modified       :2015-03-22 19:31:25
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -78,12 +78,6 @@ class Report:
     def check_class(self):
         if not os.path.exists("reportex.cls"):
             print("Warning! 'reportex.cls' is not in the current directory")
-
-    def check_creation(self):
-        print "\nChecking..."
-        print "Title: " + self.title
-        print "Subtitle: " + self.subtitle
-        print
 
     def create_report(self):
         self.title = self.write_title()
