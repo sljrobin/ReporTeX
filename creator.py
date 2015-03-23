@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-22 19:31:25
+# Modified       :2015-03-23 19:37:38
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -83,11 +83,6 @@ class Report:
         self.title = self.write_title()
         self.subtitle = self.write_subtitle()
         author = self.write_author()
-
-
-        rptx_title = self.complete_rptx_property(STR_PREFIX_COMMAND, "{\\reportTitle}", self.title)
-        rptx_subtitle = self.complete_rptx_property(STR_PREFIX_COMMAND, "{\\reportSubtitle}", self.subtitle)
-        rptx_author = self.complete_rptx_property(STR_PREFIX_COMMAND, "{\\reportAuthor}", author)
 
 ##########################################################################################
 def create():
