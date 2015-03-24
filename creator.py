@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-23 19:37:38
+# Modified       :2015-03-24 22:54:52
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -13,12 +13,6 @@
 #
 import argparse
 import os
-
-STR_NAME_ABSTRACT = "abstract.tex"
-STR_HEADER_ABSTRACT = "\\begin{abstract}\n"
-STR_FOOTER_ABSTRACT = "\\end{abstract}"
-STR_PREFIX_COMMAND = "\\newcommand"
-VLE_TITLE = "35"
 
 #class Cleaner:
 ##########################################################################################
