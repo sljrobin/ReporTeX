@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-24 22:54:52
+# Modified       :2015-03-25 22:37:59
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -46,24 +46,6 @@ class Report:
         title = truncated_value
         return title
 
-    def write_subtitle(self):
-        user_value = raw_input("Subtitle: ")
-        truncated_value = user_value[:35]
-        subtitle = truncated_value
-        return subtitle
-
-
-    def write_author(self):
-        user_value = raw_input("First name: ")
-        truncated_value = user_value[:20]
-        firstname = truncated_value
-
-        user_value = raw_input("Last name: ")
-        truncated_value = user_value[:20]
-        lastname = truncated_value
-
-        author = firstname + "\\textsc{" + lastname + "}"
-        return author
 
     def complete_rptx_property(self, prefix, command, name):
         rptx_property = prefix + command + "{" + name + "}\n"
