@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-25 22:37:59
+# Modified       :2015-03-26 19:23:19
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -60,12 +60,6 @@ class Report:
         self.subtitle = self.write_subtitle()
         author = self.write_author()
 
-##########################################################################################
-def create():
-    print("Creation of a new report")
-    
-    report = Report()
-    report.create_report()
 
 ##########################################################################################
 parser = argparse.ArgumentParser()
