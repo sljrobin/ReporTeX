@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-03-26 19:23:19
+# Modified       :2015-04-01 20:56:19
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -50,10 +50,6 @@ class Report:
     def complete_rptx_property(self, prefix, command, name):
         rptx_property = prefix + command + "{" + name + "}\n"
         return rptx_property
-
-    def check_class(self):
-        if not os.path.exists("reportex.cls"):
-            print("Warning! 'reportex.cls' is not in the current directory")
 
     def create_report(self):
         self.title = self.write_title()
