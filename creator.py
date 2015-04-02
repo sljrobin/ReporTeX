@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-04-01 20:56:19
+# Modified       :2015-04-02 20:24:53
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -16,14 +16,6 @@ import os
 
 #class Cleaner:
 ##########################################################################################
-class Component:
-    "Abstract, chapter, etc."
-
-    def __init__(self, name, header, footer):
-        self.name = name
-        self.header = header
-        self.footer = footer
-    
 class Report:
     "Creation of a report"
     
