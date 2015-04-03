@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-04-02 20:24:53
+# Modified       :2015-04-03 21:26:13
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -55,9 +55,3 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-n", "--new", help="create a new report", action="store_true")
 args = parser.parse_args()
 
-# "-n", "--new"
-if args.new:
-    create()
-
-##########################################################################################
-#if __name__ == '__main__':
