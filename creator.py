@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-04-03 21:26:13
+# Modified       :2015-04-04 21:00:11
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -24,13 +24,6 @@ class Report:
         self.author = ""
         self.title = ""
         self.subtitle = ""
-
-    def create_dependencies(self):
-        if os.path.exists(self.name):
-            print(self.name + " already exists!")
-        else:
-            component = open(self.name, "w")
-            component.close()
 
     def write_title(self):
         user_value = raw_input("Title: ")
