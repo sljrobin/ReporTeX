@@ -5,7 +5,7 @@
 # Description    : 
 # Author         :Simon L. J. Robin
 # Created        :2014-12-11 09:57:31
-# Modified       :2015-04-06 00:03:55
+# Modified       :2015-04-07 21:15:08
 ##########################################################################################
 
 #“A goal without a plan is just a wish.”
@@ -30,11 +30,6 @@ class Report:
         truncated_value = user_value[:35]
         title = truncated_value
         return title
-
-    def create_report(self):
-        self.title = self.write_title()
-        self.subtitle = self.write_subtitle()
-        author = self.write_author()
 
 
 ##########################################################################################
