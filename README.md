@@ -31,7 +31,7 @@
 * Download the repo: `git clone git://github.com/sljrobin/ReporTeX.git`
 * Edit the properties in [`report.tex`]
     * Title: `{\reportTitle}{Title}`
-    * Subtitle: `{\reportSubtitle}{Subitle}`
+    * Subtitle: `{\reportSubtitle}{Subtitle}`
     * Author: `{\reportAuthor}{John Smith}`
     * Company: `{\reportCompany}{Company}`
     * Date: `{\reportDate}{dd/mm/yyyy}`
