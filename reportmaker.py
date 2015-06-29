@@ -5,7 +5,7 @@
 # Description    :A tool to create LaTeX reports
 # Author         :Simon L. J. Robin
 # Created        :2015-01-22 15:53:39
-# Modified       :2015-06-27 17:28:15
+# Modified       :2015-06-29 20:32:21
 ########################################################################################## 
 
 import argparse
@@ -32,13 +32,11 @@ RPTX_LICENSE = "GPL license"
 RPTX_NAME = "ReporTeX"
 RPTX_REPO = "http://github.com/sljrobin/ReporTeX/"
 
-
 #####################################################################################
 ## Arguments
 ARG_D_DOWNLOAD = "download the ReporTeX class"
 ARG_M_MAKEFILE = "generate the makefile"
 ARG_N_NEW = "create a new report"
-
 
 #####################################################################################
 ## Checker
