@@ -5,7 +5,7 @@
 # Description    :A tool to create LaTeX reports
 # Author         :Simon L. J. Robin
 # Created        :2015-01-22 15:53:39
-# Modified       :2015-06-29 20:32:21
+# Modified       :2015-06-30 21:07:00
 ########################################################################################## 
 
 import argparse
@@ -50,7 +50,6 @@ CKR_ANS_YES = "yes"
 CKR_SEL_NO = "[y/N]"
 CKR_SEL_NONE = "[y/n]"
 CKR_SEL_YES = "[Y/n]"
-
 
 #####################################################################################
 ## Extensions
