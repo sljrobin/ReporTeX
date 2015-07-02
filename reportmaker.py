@@ -5,7 +5,7 @@
 # Description    :A tool to create LaTeX reports
 # Author         :Simon L. J. Robin
 # Created        :2015-01-22 15:53:39
-# Modified       :2015-06-30 21:07:00
+# Modified       :2015-07-02 21:58:09
 ########################################################################################## 
 
 import argparse
@@ -152,7 +152,6 @@ BSH_VAR_PDF_NME = "PDF"
 BSH_VAR_PDF_VLE = "=evince"
 BSH_VAR_TEX_NME = "TEX"
 BSH_VAR_TEX_VLE = "=pdflatex"
-
 
 #####################################################################################
 ## LaTeX
