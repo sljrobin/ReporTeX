@@ -5,7 +5,7 @@
 # Description    :A tool to create LaTeX reports
 # Author         :Simon L. J. Robin
 # Created        :2015-01-22 15:53:39
-# Modified       :2015-07-02 21:58:09
+# Modified       :2015-07-05 18:25:45
 ########################################################################################## 
 
 import argparse
@@ -78,7 +78,6 @@ FLDR_IMAGES = "images/"
 FLDR_PRELIMS = "prelims/"
 FLDR_REPORT = "report/"
 FLDR_TABLES = "tables/"
-
 
 #####################################################################################
 ## Headers
