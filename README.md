@@ -1,10 +1,10 @@
 # ReporTeX
-[ReporTeX] is a helper and a class which are designed for writing LaTeX reports faster and to focus as much as possible on the content and not on the layout. Feel free to check out the [ReporTeX webpage].
+> :warning: __This project is no longer actively maintained__: feel free to [contact me](https://sljrobin.org) if you need more information.
+[ReporTeX] is a helper and a class which are designed for writing LaTeX reports faster and to focus as much as possible on the content and not on the layout.
 
 ## Table of contents
 * [Requirements]
 * [How to start]
-
 * [License]
 
 ## Requirements
@@ -60,15 +60,10 @@ The content of this project is licensed under the GPL license.
 
 [ReportMaker]: /reportmaker.py "ReportMaker"
 [ReportMaker source webpage]: https://github.com/sljrobin/ReporTeX/blob/master/reportmaker.py "ReportMaker source webpage"
-
-
 [Content]: /README.md#content "Content"
 [Requirements]: /README.md#requirements "Requirements"
 [How to start]: /README.md#how-to-start "How to start"
 [Options]: /README.md#options "Options"
 [License]: /README.md#license "License"
-
 [`reportex.cls`]: /reportex.cls "reportex.cls"
-
 [ReporTeX]: https://github.com/sljrobin/ReporTeX "ReporTeX"
-[ReporTeX webpage]: http://work.sljrobin.com/reportex "ReporTeX webpage"
