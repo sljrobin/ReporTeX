@@ -1,5 +1,6 @@
 # ReporTeX
 > :warning: __This project is no longer actively maintained__: feel free to [contact me](https://sljrobin.org) if you need more information.
+
 [ReporTeX] is a helper and a class which are designed for writing LaTeX reports faster and to focus as much as possible on the content and not on the layout.
 
 ## Table of contents
